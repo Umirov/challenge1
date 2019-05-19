@@ -1,0 +1,36 @@
+.hidden {
+    display: none;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3em;
+}
+
+.form-row > label {
+    flex: 1;
+}
+
+.form-row > input {
+    flex: 2;
+}
+
+.form-submit-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3em;
+}
+
+table, td, tr, th {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+table {
+    width: 100%;
+}
+
+main {
+    width: 50%;
+}

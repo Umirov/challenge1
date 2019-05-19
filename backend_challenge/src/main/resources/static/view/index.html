@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/css/app.css"/>
+    <title>CryptoCurrency best deals</title>
+</head>
+
+<body>
+<main>
+    <form id="getDealsForm" action="/cryptodeal">
+        <div class="form-row">
+            <label for="cryptoCurrencyName">Crypto currency name</label>
+            <input type="text" name="cryptoCurrencyName" id="cryptoCurrencyName"/>
+        </div>
+        <div class="form-row">
+            <label for="date">Date</label>
+            <input type="text" name="date" id="date"/>
+        </div>
+        <div class="form-submit-row">
+            <input type="submit" value="Get best deal">
+        </div>
+    </form>
+
+    <div id="cryptoCurrency">
+        <div class="error-text hidden"></div>
+        <table id="cryptoCurrencyInfo" class="hidden">
+            <thead>
+            <tr>
+                <th class="cryptoCurrencyName">BTC</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Buy</td>
+                <td>Sell</td>
+            </tr>
+            <tr>
+                <td class="cryptoCurrencyBuyPrice">$34.98</td>
+                <td class="cryptoCurrencySellPrice">$37.01</td>
+            </tr>
+            <tr>
+                <td class="cryptoCurrencyBuyTime">09:15AM</td>
+                <td class="cryptoCurrencySellTime">12:30PM</td>
+            </tr>
+            <tr>
+                <td>Profit</td>
+                <td class="cryptoCurrencyProfit">$2.03</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <script type="text/javascript" src="/js/app.es6"></script>
+</footer>
+</body>
+
+</html>
